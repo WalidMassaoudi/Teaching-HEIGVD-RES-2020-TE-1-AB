@@ -22,14 +22,14 @@ WELCOME ,LIST,ERROR et END
 C'est un message envoyé par le serveur juste apèrs l'établissement du connection .Ce message propose la liste des services founies par notre serveur.
 Exemple :
 WELCOME 
-    You want some Jokes ? this is how to use me :
-    - JOKE [category]["your joke "] 
+    ####You want some Jokes ? this is how to use me :
+    #### - JOKE [category]["your joke "] 
           - Category : BLACKHUMUR,NOTFUNNY,CRTICAL,ELSE
-    - ALLJOKE -r
+    ####- ALLJOKE -r
            - r :lastet
-    - LIKE [TAG]
+    ####- LIKE [TAG]
           TAG:tag Joke
-    - RANK
+    ####- RANK
                     
 ### LIST
 CE message est générique ,il porte les réponse sous forme d'une liste .
@@ -42,7 +42,7 @@ un message end indique la fermeture de la connection
 ### Service fournie
    Le  serveur offre deux fonctionnalité principales ,la première est d'ajouter un Joke à la base de donnée de notre serveur,
 l'autre est de litser les jokes disponibles .
-###Extensibilité
+### Extensibilité
 Une implémentation supplémentaire offre des autres fonctionnalitées .Ces options seront communiquer avec le client pendant le message WELCOME.  
 ### Traitement d'erreurs
 En cas d'erreur le serveur envoie un message ERROR contenant le code d'erreur . 
