@@ -15,6 +15,7 @@ Le client peut envoyer des Jokes au serveur avec le syntaxe Joke [catégorie] ["
 Apèrs avoir reçu cette liste chaque Joke sera identifier par un Tag (numéro) ,
 ce qui nous permet d'offrir la possibilité d'évaluation des Jokes on tapant LIKE [TAG JOKE].Une commande RANK taper par le client retourne tout simplement une liste des utilisateurs classée premièrement selon l'évaluation (nombre des LIKE total) de Joke puis le nombre de joke (Nombre de JOKE).
 Les Jokes sont enregistré suivant des catégorie prédéfinie par le serveur .Une fois note client a finit ,il envoie un message END pour fermer la connexion TCP.
+Le protocole sera sans état par ce que le serveur ne doit pas  mémoriser le client meme avec la commande LISTALL .
 ## Messages
 Le protocole JOCC définit .. messages :
 WELCOME ,LIST,ERROR et END
@@ -56,4 +57,3 @@ Exemple réponse de la part du serveur à la commande ALLJOKE:
 - couc     "whatsup"        2          4
 - couc      "here we go "   2          0
 
-Si vous avez des choses à partager au sujet de l'exercice, utilisez cette dernière section.
