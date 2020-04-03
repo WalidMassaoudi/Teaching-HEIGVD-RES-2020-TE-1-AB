@@ -23,13 +23,13 @@ C'est un message envoyé par le serveur juste apèrs l'établissement du connect
 Exemple :
 WELCOME 
     You want some Jokes ? this is how to use me :
-    -JOKE [category]["your joke "] 
-          Category : BLACKHUMUR,NOTFUNNY,CRTICAL,ELSE
-    -ALLJOKE -r
-           -r :lastet
-    -LIKE [TAG]
+    - JOKE [category]["your joke "] 
+          - Category : BLACKHUMUR,NOTFUNNY,CRTICAL,ELSE
+    - ALLJOKE -r
+           - r :lastet
+    - LIKE [TAG]
           TAG:tag Joke
-    -RANK
+    - RANK
                     
 ### LIST
 CE message est générique ,il porte les réponse sous forme d'une liste .
@@ -48,12 +48,12 @@ Une implémentation supplémentaire offre des autres fonctionnalitées .Ces opti
 En cas d'erreur le serveur envoie un message ERROR contenant le code d'erreur . 
 ## Remarques
 Exemples d'utilisation par le client :
--JOKE NOTFUNNY "my first joke "
--ALLJOKE 
+- JOKE NOTFUNNY "my first joke "
+- ALLJOKE 
 
 Exemple réponse de la part du serveur à la commande ALLJOKE:
-user     joke           NbJokes    Likes
-couc     "whatsup"        2          4
-couc      "here we go "   2          0
+- user     joke           NbJokes    Likes
+- couc     "whatsup"        2          4
+- couc      "here we go "   2          0
 
 Si vous avez des choses à partager au sujet de l'exercice, utilisez cette dernière section.
